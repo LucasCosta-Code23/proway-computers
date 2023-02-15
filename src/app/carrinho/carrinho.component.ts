@@ -9,7 +9,7 @@ import { IProdutoCarrinho } from '../produtos';
   styleUrls: ['./carrinho.component.css']
 })
 export class CarrinhoComponent implements OnInit {
-  itensCarrinho: IProdutoCarrinho[]  = [];
+  itensCarrinho: IProdutoCarrinho[] = [];
   total = 0;
 
   constructor(

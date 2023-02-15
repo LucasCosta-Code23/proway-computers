@@ -11,7 +11,9 @@ describe('NaoEncontradaComponent', () => {
       declarations: [ NaoEncontradaComponent ]
     })
     .compileComponents();
+  });
 
+  beforeEach(() => {
     fixture = TestBed.createComponent(NaoEncontradaComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

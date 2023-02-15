@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { IProduto } from '../produtos';
 import { ProdutosService } from '../produtos.service';
 
@@ -22,7 +22,7 @@ export class ProdutosComponent implements OnInit {
       const descricao = params.get("descricao")?.toLowerCase();
 
       if (descricao) {
-        this.produtos = produtos.filter(produto => produto.descricao.toLocaleLowerCase().includes(descricao));
+        this.produtos = produtos.filter(produto => produto.descricao.toLowerCase().includes(descricao));
         return;
       }
 

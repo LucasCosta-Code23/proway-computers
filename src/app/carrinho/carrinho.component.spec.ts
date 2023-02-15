@@ -11,7 +11,9 @@ describe('CarrinhoComponent', () => {
       declarations: [ CarrinhoComponent ]
     })
     .compileComponents();
+  });
 
+  beforeEach(() => {
     fixture = TestBed.createComponent(CarrinhoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

@@ -11,7 +11,9 @@ describe('BarraPesquisaComponent', () => {
       declarations: [ BarraPesquisaComponent ]
     })
     .compileComponents();
+  });
 
+  beforeEach(() => {
     fixture = TestBed.createComponent(BarraPesquisaComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
